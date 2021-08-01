@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">
+            {{pageTitle}}        
+    </div>
+</div>
+<div class="card-body">
+    <div class='table-responsive'>
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>xbeeid</th>
+                    <th>moteid</th>
+                    <th>motelocation</th>
+                    <th>hubname</th>
+                    <th>temperature</th>
+                    <th>airpressure</th>
+                    <th>humidity</th>
+                    <th>light</th>
+                    <th>altitude</th>
+                    <th>mic</th>
+                    <th>gas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let data of sensorData.sensorreadinglist'>
+                        <td>{{data.xbeeid}}</td>
+                        <td>{{data.moteid}}</td>
+                        <td>{{data.motelocation}}</td>
+                        <td>{{data.hubname}}</td>
+                        <td>{{data.temperature}}</td>
+                        <td>{{data.airpressure}}</td>
+                        <td>{{data.humidity}}</td>
+                        <td>{{data.light}}</td>
+                        <td>{{data.altitude}}</td>
+                        <td>{{data.mic}}</td>
+                        <td>{{data.gas}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
